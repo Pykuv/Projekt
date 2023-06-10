@@ -7,11 +7,14 @@ import java.util.Scanner;
 /**
  * Class RunController
  */
+
 public class RunController extends BasicData{
+
     /**
      * Class to run program
      */
     public void run() {
+        
         //Scanner scanner = new Scanner(System.in);
         Person person = new Person();
         System.out.println("Wpisz imię pacjenta");
