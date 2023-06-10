@@ -1,5 +1,4 @@
 package models;
-
 import interfaces.BasicInterface;
 import interfaces.PersonInterface;
 
@@ -15,7 +14,7 @@ public class Person extends BasicData implements BasicInterface, PersonInterface
      */
     public String[] PersonData() {
         return new String[]{
-                "gender: " + this.getGender,
+                "gender: " + this.getGender(),
                 "name: " + this.getName(),
                 "age: " + this.getAge(),
         };
