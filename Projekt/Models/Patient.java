@@ -1,18 +1,18 @@
 package models;
 import interfaces.BasicInterface;
-import interfaces.PersonInterface;
+import interfaces.PatientInterface;
 
 /**
  * Class pacjentów
  */
-public class Person extends BasicData implements BasicInterface, PersonInterface {
+public class Patient extends BasicData implements BasicInterface, PatientInterface {
   public String work = "programmers";
 
     /**
      * String[] returned with set properties
      * @return
      */
-    public String[] PersonData() {
+    public String[] PatientData() {
         return new String[]{
                 "gender: " + this.getGender(),
                 "name: " + this.getName(),
