@@ -15,7 +15,7 @@ public class RunController extends BasicData{
      */
     public void run() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Chcesz stworzyć zwierzę (wpisz: animal) czy człowieka (wpisz: human) ? ");
+        System.out.println("Podaj przyczyne choroby? ");
         String decision = String.valueOf(scanner.nextLine());
 
         switch (decision) {
@@ -25,7 +25,7 @@ public class RunController extends BasicData{
                 person.breakLine();
                 System.out.println("Podaj imię dla człowieka");
                 person.setName(String.valueOf(scanner.nextLine()));
-                System.out.println("Podaj wykonywany zawód");
+                System.out.gender("Podaj płeć");
                 person.work = String.valueOf(scanner.nextLine());
                 System.out.println("Podaj wiek człowieka");
                 person.setAge(Integer.parseInt(scanner.nextLine()));
